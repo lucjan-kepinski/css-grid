@@ -4,53 +4,51 @@
 
 <head>
 
-	<title>Using CSS Grid</title>
+    <title>Using CSS Grid</title>
 
-	<style>
+    <style>
+        body {
 
-		body{
+            color: #fff;
 
-			color: #fff;
+            font-family: 'Nunito Semibold';
 
-			font-family: 'Nunito Semibold';
+            text-align: center;
 
-			text-align: center;
+        }
 
-		}
-
-		#content{
+        #content {
 
             display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            grid-template-rows: repeat(10, minmax(200px, auto));
+
+            /*grid-auto-rows: minmax(200px, auto);*/
+
+            grid-gap: 10px;
             
-            /*grid-template-columns: 30% 20% 50%*/
+            max-width: 960px;
 
-            /*grid-template-columns: 1fr 2fr 1fr;*/
+            margin: 0 auto;
 
-			grid-template-columns: repeat(9, 1fr);
+        }
 
-			max-width: 960px;
+        #content div {
 
-			margin: 0 auto;
+            background: #3bbced;
 
-		}
+            padding: 30px;
 
-		#content div{
+        }
 
-			background: #3bbced;
+        #content div:nth-child(even) {
 
-			padding: 30px;
+            background: #777;
 
-		}
-
-		#content div:nth-child(even){
-
-			background: #777;
-
-			padding: 30px;
-
-		}
-
-	</style>
+        }
+    </style>
 
 </head>
 
@@ -58,31 +56,36 @@
 
 
 
-	<div id="content">
+    <div id="content">
 
 
 
-		<div>1</div>
+        <div>1</div>
 
-		<div>2</div>
+        <div>2</div>
 
-		<div>3</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorum, ducimus consequatur porro
+            temporibus, aperiam in vero saepe ipsum minima, iste placeat vel? Voluptatum sequi molestias est quas, fugit
+            officiis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorum, ducimus consequatur porro
+            temporibus, aperiam in vero saepe ipsum minima, iste placeat vel? Voluptatum sequi molestias est quas, fugit
+            officiis</div>
 
-		<div>4</div>
+        <div>4</div>
 
-		<div>5</div>
+        <div>5</div>
 
-		<div>6</div>
+        <div>6</div>
 
-		<div>7</div>
+        <div>7</div>
 
-		<div>8</div>
+        <div>8</div>
 
-		<div>9</div>
+        <div>9</div>
 
 
 
-	</div>
+    </div>
 
 
 
